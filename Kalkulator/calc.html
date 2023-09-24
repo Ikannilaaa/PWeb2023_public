@@ -1,0 +1,42 @@
+<!doctype html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+    </head>
+
+    <body>
+        <h3>Masukkan angka pertama:</h3>
+        <input type="number" id="angkaSatu" name="angkaSatu" value="0"><br>
+        <h3>Masukkan angka kedua:</h3>
+        <input type="number" id="angkaDua" name="angkaDua" value="0"><br>
+
+        <br>
+        <button onclick="tambah()">+</button>
+        <button onclick="kurang()">-</button>
+        <button onclick="kali()">x</button>
+        <button onclick="bagi()">:</button>
+
+        <br><h2 id="hasil"></h2>
+
+        <script>
+            function tambah(){
+                let x = parseFloat(angkaSatu.value);
+                let y = parseFloat(angkaDua.value);
+                document.getElementById("hasil").innerHTML = x + y;
+            }
+            function kurang(){
+                let total = document.getElementById("angkaSatu").value - document.getElementById("angkaDua").value;
+                document.getElementById("hasil").innerHTML = total;
+            }
+            function kali(){
+                let total = document.getElementById("angkaSatu").value * document.getElementById("angkaDua").value;
+                document.getElementById("hasil").innerHTML = total;
+            }
+            function bagi(){
+                let total = document.getElementById("angkaSatu").value / document.getElementById("angkaDua").value;
+                document.getElementById("hasil").innerHTML = total;
+            }
+        </script>
+    </body>
+</html>

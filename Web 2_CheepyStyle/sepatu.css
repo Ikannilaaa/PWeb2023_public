@@ -1,0 +1,134 @@
+h1{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 90px;
+    margin-bottom: -50px;
+    margin-top: 0;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+h5{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.flannel {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+/*judul barang*/
+.judul1 {
+    position: absolute;
+    bottom: 210px;
+    left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    -0.3px -0.3px 0 rgb(90, 83, 83, 0.5),
+    0.3px -0.3px 0 rgb(177, 164, 164, 0.5),
+    -0.3px 0.3px 0 rgba(0, 0, 0, 0.5),
+    0.5px 0.5px 0 rgb(90, 83, 83); 
+  }
+
+  .judul2 {
+    position: absolute;
+    bottom: 190px;
+    left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    -0.3px -0.3px 0 rgb(90, 83, 83, 0.5),
+    0.3px -0.3px 0 rgb(177, 164, 164, 0.5),
+    -0.3px 0.3px 0 rgba(0, 0, 0, 0.5),
+    0.5px 0.5px 0 rgb(90, 83, 83); 
+  }
+  
+  /* deskripsi barang */
+  .deskripsi1 {
+    position: absolute;
+    bottom: 155px;
+    left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    -0.3px -0.3px 0 rgb(90, 83, 83, 0.5),
+    0.3px -0.3px 0 rgb(177, 164, 164, 0.5),
+    -0.3px 0.3px 0 rgba(0, 0, 0, 0.5),
+    0.5px 0.5px 0 rgb(90, 83, 83); 
+  }
+
+  .deskripsi2 {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    -0.3px -0.3px 0 rgb(90, 83, 83, 0.5),
+    0.3px -0.3px 0 rgb(177, 164, 164, 0.5),
+    -0.3px 0.3px 0 rgba(0, 0, 0, 0.5),
+    0.5px 0.5px 0 rgb(90, 83, 83); 
+  }
+
+  /* harga 1 */
+  .harga1 {
+    position: absolute;
+    bottom: 123px;
+    left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    -0.3px -0.3px 0 rgb(90, 83, 83, 0.5),
+    0.3px -0.3px 0 rgb(177, 164, 164, 0.5),
+    -0.3px 0.3px 0 rgba(0, 0, 0, 0.5),
+    0.5px 0.5px 0 rgb(90, 83, 83); 
+  }
+  
+  /* Button */
+  .button1 {
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    -0.3px -0.3px 0 rgb(90, 83, 83, 0.5),
+    0.3px -0.3px 0 rgb(177, 164, 164, 0.5),
+    -0.3px 0.3px 0 rgba(0, 0, 0, 0.5),
+    0.5px 0.5px 0 rgb(90, 83, 83);
+  }
+
+  a:link, a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover, a:active {
+    text-decoration: underline;
+  }
+
+  html, body {
+    margin: 0px;
+    padding: 0px;
+    background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg");
+}
