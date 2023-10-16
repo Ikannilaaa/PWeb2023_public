@@ -1,0 +1,11 @@
+.col-sm-3{
+    border: 10%;
+    border-radius: 10%;
+    border-style: none;
+}
+
+.callout {
+    border-left-color: blue;
+    border-radius: 10%;
+    border: 10%;
+}

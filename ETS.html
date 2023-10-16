@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="ETS.css">
+    <!--Bootstrap Links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Basic Header-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Currency</title>
+</head>
+
+<body>
+    <!--Baris Pertama-->
+    <br>
+    <div class="row">
+        <div class="col-sm-3">
+                <div class="callout">
+                    <p class="pairs" style="color: blue; margin-bottom: 10px;">EUR USD</p>
+                    <p class="cur" style="text-align: left; margin-top: -10px;"><strong>278</strong></p>
+                </div>
+        </div>
+        
+        <div class="col-sm-3">
+                <div class="callout">
+                    <p class="pairs" style="color: blue; margin-bottom: 10px;">EUR GBP</p>
+                    <p class="cur" style="text-align: left; margin-top: -10px;"><strong>278</strong></p>
+                </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="callout">
+                    <p class="pairs" style="color: blue; margin-bottom: 10px;">GBP USD</p>
+                    <p class="cur" style="text-align: left; margin-top: -10px;"><strong>278</strong></p>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="callout">
+                    <p class="pairs" style="color: blue; margin-bottom: 10px;">USD JPY</p>
+                    <p class="cur" style="text-align: left; margin-top: -10px;"><strong>278</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!--Baris Kedua-->
+    <br>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="callout">
+                    <p class="pairs" style="color: blue; margin-bottom: 10px;">AUD USD</p>
+                    <p class="cur" style="text-align: left; margin-top: -10px;"><strong>278</strong></p>
+            </div>
+        </div>
+        
+        <div class="col-sm-3">
+            <div class="callout">
+                    <p class="pairs" style="color: blue; margin-bottom: 10px;">USD CHF</p>
+                    <p class="cur" style="text-align: left; margin-top: -10px;"><strong>278</strong></p>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="callout">
+                    <p class="pairs" style="color: blue; margin-bottom: 10px;">NZD USD</p>
+                    <p class="cur" style="text-align: left; margin-top: -10px;"><strong>278</strong></p>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="callout">
+                    <p class="pairs" style="color: blue; margin-bottom: 10px;">USD CAD</p>
+                    <p class="cur" style="text-align: left; margin-top: -10px;"><strong>278</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!--Baris ketiga-->
+    <br>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="callout">
+                    <p class="pairs" style="color: blue; margin-bottom: 10px;">USD ZAR</p>
+                    <p class="cur" style="text-align: left; margin-top: -10px;"><strong>278</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const apiUrl = "http://apilayer.net/api/live?access_key=e53cbd7af9380d7c0df6258029319b52";
+        //const apiKey = "e53cbd7af9380d7c0df6258029319b52";
+        const apiPairs = document.querySelector(".pairs");
+       /* const pairsAudusd = document.querySelector(".pairs-audusd");
+        const pairsEurgbp = document.querySelector(".pairs-eurgbp");
+        const pairsEurusd = document.querySelector(".pairs-eurusd");
+        const pairsGbpusd = document.querySelector(".pairs-gbpusd");
+        const pairsNzdusd = document.querySelector(".pairs-nzdusd");
+        const pairsUsdcad = document.querySelector(".pairs-usdcad");
+        const pairsUsdchf = document.querySelector(".pairs-usdchf");
+        const pairsUsdjpy = document.querySelector(".pairs-usdjpy");
+        const pairsUsdzar = document.querySelector(".pairs-usdzar"); */
+
+
+        async function cekCurrency(cur){
+            const response = await fetch(apiUrl + cur + `&pairs=${apiPairs}`);
+            var data = await response.json();
+
+            console.log(data);
+
+            document.querySelector(".cur").innerHTML = data.rates.pairs.rate;
+        }
+    </script>
+</body>
+</html>
